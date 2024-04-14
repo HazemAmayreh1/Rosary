@@ -1,0 +1,124 @@
+body,
+h1,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Amiri", serif;
+  line-height: 1;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #3e4e88;
+  margin-bottom: 20px;
+}
+
+.rosary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 1.2em;
+  color: #3e4e88;
+  margin-bottom: 10px;
+}
+
+.count {
+  font-size: 2em;
+  font-weight: bold;
+  color: #8a3e88;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: "Amiri", serif;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+button:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+button:hover {
+  background-color: #3672b8;
+}
+
+button.zero {
+  background-color: #e94f37;
+}
+
+button.zero:hover {
+  background-color: #b03a2e;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .rosary {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .title,
+  .count {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.8em;
+  }
+}
